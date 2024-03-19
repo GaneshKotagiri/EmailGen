@@ -1,11 +1,8 @@
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.util.Scanner;
 public class EmailGen implements EmailConsole {
     String firstName;String lastName;String userName;String department;String password;
     String email;String altEmail;
-    //int capacity;
     String organization;
     Scanner sc=new Scanner(System.in);
     public EmailGen(){
