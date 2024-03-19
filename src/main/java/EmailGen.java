@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class EmailGen implements EmailConsole {
     String firstName;String lastName;String userName;String department;String password;
-    String email;String altEmail;
+    String email;
     String organization;
     Scanner sc=new Scanner(System.in);
     public EmailGen(){
@@ -37,7 +37,6 @@ public class EmailGen implements EmailConsole {
     }
     public String setDep(){
         System.out.println("Department:\n1 Developer\n2 Data Engineer\n3 Sales\n4 Security Analyst");
-        //Scanner sc=new Scanner(System.in);
         int dep=sc.nextInt();
         System.out.println("This is  your department :");
         if(dep==1){return "Dev";
